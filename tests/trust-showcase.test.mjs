@@ -129,6 +129,16 @@ test("TOP奖项Logo获得独立的手机定位标识", () => {
   assert.match(topAwardLogo.className, /\btrust-award-logo-top\b/);
 });
 
+test("TOP奖项Logo在所有断点至少上移二十像素避免下沉", () => {
+  const topLogoRules = [...styleSource.matchAll(/\.trust-award-logo-top\s*\{([^}]*)\}/g)].map((match) => match[1]);
+  const upwardOffsets = topLogoRules.flatMap((rule) =>
+    [...rule.matchAll(/translateY\((-?\d+)px\)/g)].map((match) => Number(match[1]))
+  );
+
+  assert.ok(upwardOffsets.length > 0);
+  assert.ok(upwardOffsets.every((offset) => offset <= -20));
+});
+
 test("为什么选择标题在所有断点保持单行且手机字号可收缩", () => {
   const titleRules = [...styleSource.matchAll(/\.trust-reveal-title\s*\{([^}]*)\}/g)].map((match) => match[1]);
   const baseRule = titleRules[0];

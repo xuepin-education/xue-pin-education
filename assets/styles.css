@@ -774,6 +774,10 @@ h3 {
   height: 132px;
 }
 
+.trust-award-logo-top {
+  transform: translateY(-20px);
+}
+
 .trust-award-logo img {
   width: 100%;
   height: 100%;
@@ -2238,10 +2242,6 @@ body[data-page="courses"] .page-hero h1 {
   .trust-awards {
     grid-template-columns: 1fr;
     max-width: 720px;
-  }
-
-  .trust-award-logo-top {
-    transform: translateY(-10px);
   }
 
   .promise-showcase {
