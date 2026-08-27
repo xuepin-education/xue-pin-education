@@ -595,7 +595,9 @@ window.SITE_DATA = {
         { name: { zh: "Gavin 老师", en: "Teacher Gavin" }, image: "assets/images/teachers/secondary-gavin-2026.jpeg" },
         { name: { zh: "Darren 老师", en: "Teacher Darren" }, image: "assets/images/teachers/secondary-darren-2026.png" },
         { name: { zh: "Ivan 老师", en: "Teacher Ivan" }, image: "assets/images/teachers/secondary-ivan-2026.jpg" },
-        { name: { zh: "许老师", en: "Teacher Xu" }, image: "assets/images/teachers/secondary-xu-2026.png" }
+        { name: { zh: "许老师", en: "Teacher Xu" }, image: "assets/images/teachers/secondary-xu-2026.png" },
+        { name: { zh: "Mico 老师", en: "Teacher Mico" }, image: "assets/images/teachers/secondary-mico-2026.jpeg" },
+        { name: { zh: "谢老师", en: "Teacher Xie" }, image: "assets/images/teachers/secondary-xie-2026.png" }
       ]
     },
     {
@@ -605,7 +607,8 @@ window.SITE_DATA = {
       teachers: [
         { name: { zh: "Lucas 老师", en: "Teacher Lucas" }, image: "assets/images/teachers/primary-lucas.jpg" },
         { name: { zh: "萧老师", en: "Teacher Xiao" }, image: "assets/images/teachers/primary-xiao.jpg" },
-        { name: { zh: "Candy 老师", en: "Teacher Candy" }, image: "assets/images/teachers/primary-candy.jpg" }
+        { name: { zh: "Candy 老师", en: "Teacher Candy" }, image: "assets/images/teachers/primary-candy.jpg" },
+        { name: { zh: "孔老师", en: "Teacher Kong" }, image: "assets/images/teachers/primary-kong.jpg" }
       ]
     },
     {
@@ -614,7 +617,8 @@ window.SITE_DATA = {
       description: { zh: "负责托育班日常照顾、功课辅导、学习跟进与家长沟通。", en: "Daycare support, homework guidance, learning follow-up, and parent communication." },
       teachers: [
         { name: { zh: "Elaine 老师", en: "Teacher Elaine" }, image: "assets/images/teachers/daycare-elaine.jpg" },
-        { name: { zh: "Angel 老师", en: "Teacher Angel" }, image: "assets/images/teachers/daycare-angel.jpg" }
+        { name: { zh: "Angel 老师", en: "Teacher Angel" }, image: "assets/images/teachers/daycare-angel.jpg" },
+        { name: { zh: "陈老师", en: "Teacher Chen" }, image: "assets/images/teachers/daycare-chen.jpg" }
       ]
     }
   ],
