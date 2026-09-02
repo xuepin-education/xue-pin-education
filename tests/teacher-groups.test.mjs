@@ -26,7 +26,8 @@ const primaryProfiles = [
   profile("雪老师", "Teacher Xue", "assets/images/teachers/primary-xue-2026.jpg"),
   profile("王老师", "Teacher Wang", "assets/images/teachers/primary-wang-2026.jpeg"),
   profile("刘老师", "Teacher Liu", "assets/images/teachers/primary-liu-2026.jpeg"),
-  profile("Cherry 老师", "Teacher Cherry", "assets/images/teachers/primary-daycare-cherry-2026.jpeg")
+  profile("Cherry 老师", "Teacher Cherry", "assets/images/teachers/primary-daycare-cherry-2026.jpeg"),
+  profile("蔡老师", "Teacher Cai", "assets/images/teachers/primary-cai-2026.jpeg")
 ];
 const daycareProfiles = [
   profile("Elaine 老师", "Teacher Elaine", "assets/images/teachers/daycare-elaine.jpg"),
@@ -46,7 +47,7 @@ test("中学组加入 Mico 老师和谢老师的新照片", () => {
   );
 });
 
-test("小学组加入晶、雪、王、刘和 Cherry 老师的照片", () => {
+test("小学组加入晶、雪、王、刘、Cherry 和蔡老师的照片", () => {
   const primary = groups.find((group) => group.id === "primary");
 
   assert.deepEqual(

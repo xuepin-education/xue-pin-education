@@ -613,7 +613,8 @@ window.SITE_DATA = {
         { name: { zh: "雪老师", en: "Teacher Xue" }, image: "assets/images/teachers/primary-xue-2026.jpg" },
         { name: { zh: "王老师", en: "Teacher Wang" }, image: "assets/images/teachers/primary-wang-2026.jpeg" },
         { name: { zh: "刘老师", en: "Teacher Liu" }, image: "assets/images/teachers/primary-liu-2026.jpeg" },
-        { name: { zh: "Cherry 老师", en: "Teacher Cherry" }, image: "assets/images/teachers/primary-daycare-cherry-2026.jpeg" }
+        { name: { zh: "Cherry 老师", en: "Teacher Cherry" }, image: "assets/images/teachers/primary-daycare-cherry-2026.jpeg" },
+        { name: { zh: "蔡老师", en: "Teacher Cai" }, image: "assets/images/teachers/primary-cai-2026.jpeg" }
       ]
     },
     {
