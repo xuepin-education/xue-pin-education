@@ -608,7 +608,12 @@ window.SITE_DATA = {
         { name: { zh: "Lucas 老师", en: "Teacher Lucas" }, image: "assets/images/teachers/primary-lucas.jpg" },
         { name: { zh: "萧老师", en: "Teacher Xiao" }, image: "assets/images/teachers/primary-xiao.jpg" },
         { name: { zh: "Candy 老师", en: "Teacher Candy" }, image: "assets/images/teachers/primary-candy.jpg" },
-        { name: { zh: "孔老师", en: "Teacher Kong" }, image: "assets/images/teachers/primary-kong.jpg" }
+        { name: { zh: "孔老师", en: "Teacher Kong" }, image: "assets/images/teachers/primary-kong.jpg" },
+        { name: { zh: "晶老师", en: "Teacher Jing" }, image: "assets/images/teachers/primary-jing-2026.jpeg" },
+        { name: { zh: "雪老师", en: "Teacher Xue" }, image: "assets/images/teachers/primary-xue-2026.jpg" },
+        { name: { zh: "王老师", en: "Teacher Wang" }, image: "assets/images/teachers/primary-wang-2026.jpeg" },
+        { name: { zh: "刘老师", en: "Teacher Liu" }, image: "assets/images/teachers/primary-liu-2026.jpeg" },
+        { name: { zh: "Cherry 老师", en: "Teacher Cherry" }, image: "assets/images/teachers/primary-daycare-cherry-2026.jpeg" }
       ]
     },
     {
@@ -618,7 +623,9 @@ window.SITE_DATA = {
       teachers: [
         { name: { zh: "Elaine 老师", en: "Teacher Elaine" }, image: "assets/images/teachers/daycare-elaine.jpg" },
         { name: { zh: "Angel 老师", en: "Teacher Angel" }, image: "assets/images/teachers/daycare-angel.jpg" },
-        { name: { zh: "陈老师", en: "Teacher Chen" }, image: "assets/images/teachers/daycare-chen.jpg" }
+        { name: { zh: "陈老师", en: "Teacher Chen" }, image: "assets/images/teachers/daycare-chen.jpg" },
+        { name: { zh: "薇老师", en: "Teacher Wei" }, image: "assets/images/teachers/daycare-wei-2026.jpg" },
+        { name: { zh: "Cherry 老师", en: "Teacher Cherry" }, image: "assets/images/teachers/primary-daycare-cherry-2026.jpeg" }
       ]
     }
   ],
