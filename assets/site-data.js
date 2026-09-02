@@ -625,6 +625,7 @@ window.SITE_DATA = {
         { name: { zh: "Angel 老师", en: "Teacher Angel" }, image: "assets/images/teachers/daycare-angel.jpg" },
         { name: { zh: "陈老师", en: "Teacher Chen" }, image: "assets/images/teachers/daycare-chen.jpg" },
         { name: { zh: "薇老师", en: "Teacher Wei" }, image: "assets/images/teachers/daycare-wei-2026.jpg" },
+        { name: { zh: "颜老师", en: "Teacher Yan" }, image: "assets/images/teachers/daycare-yan-2026.jpg" },
         { name: { zh: "Cherry 老师", en: "Teacher Cherry" }, image: "assets/images/teachers/primary-daycare-cherry-2026.jpeg" }
       ]
     }

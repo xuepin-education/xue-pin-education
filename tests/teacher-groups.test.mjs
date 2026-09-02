@@ -33,6 +33,7 @@ const daycareProfiles = [
   profile("Angel 老师", "Teacher Angel", "assets/images/teachers/daycare-angel.jpg"),
   profile("陈老师", "Teacher Chen", "assets/images/teachers/daycare-chen.jpg"),
   profile("薇老师", "Teacher Wei", "assets/images/teachers/daycare-wei-2026.jpg"),
+  profile("颜老师", "Teacher Yan", "assets/images/teachers/daycare-yan-2026.jpg"),
   profile("Cherry 老师", "Teacher Cherry", "assets/images/teachers/primary-daycare-cherry-2026.jpeg")
 ];
 
@@ -56,7 +57,7 @@ test("小学组加入晶、雪、王、刘和 Cherry 老师的照片", () => {
   assert.doesNotMatch(primary.description.en, /coming soon/i);
 });
 
-test("托育组加入薇老师和 Cherry 老师的照片", () => {
+test("托育组加入薇、颜和 Cherry 老师的照片", () => {
   const daycare = groups.find((group) => group.id === "daycare");
 
   assert.deepEqual(
