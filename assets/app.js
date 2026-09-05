@@ -331,11 +331,9 @@
       image.decoding = "async";
       logo.append(image);
       const body = create("div", "trust-award-copy");
-      body.append(
-        create("span", "", text(item.name)),
-        create("h3", "", text(item.headline)),
-        create("p", "", text(item.detail))
-      );
+      if (item.name) body.append(create("span", "", text(item.name)));
+      if (item.headline) body.append(create("h3", "", text(item.headline)));
+      if (item.detail) body.append(create("p", "", text(item.detail)));
       card.append(logo, body);
       awardsTarget.append(card);
     });

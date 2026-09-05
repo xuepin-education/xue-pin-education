@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import test from "node:test";
 import vm from "node:vm";
@@ -107,13 +107,30 @@ const renderTrustShowcase = () => {
   };
 
   vm.runInNewContext(appSource, context);
-  return { awards, intervals };
+  return { awards, intervals, trophy };
 };
 
-test("三大奖项轮播每两秒自动切换", () => {
+test("四大奖项轮播每两秒自动切换", () => {
   const { intervals } = renderTrustShowcase();
 
   assert.equal(intervals[0].delay, 2000);
+});
+
+test("奖项标题改为四大奖项，并在 TOP AWARD 后加入只显示名称的金牛奖", () => {
+  const { awards, trophy } = renderTrustShowcase();
+  const trophyHeadline = trophy.children[0].children[1];
+  const goldenBullCard = awards.children[3];
+  const goldenBullLogo = goldenBullCard.children[0].children[0];
+  const goldenBullCopy = goldenBullCard.children[1];
+
+  assert.equal(trophyHeadline.textContent, "唯一获得四大奖项的教育机构");
+  assert.equal(awards.children.length, 4);
+  assert.equal(goldenBullLogo.src, "assets/images/trust/golden-bull-award.png");
+  assert.equal(goldenBullLogo.alt, "金牛奖");
+  assert.equal(goldenBullCopy.children.length, 1);
+  assert.equal(goldenBullCopy.children[0].tagName, "h3");
+  assert.equal(goldenBullCopy.children[0].textContent, "金牛奖");
+  assert.equal(existsSync(resolve(projectRoot, goldenBullLogo.src)), true);
 });
 
 test("托育图片轮播每三秒自动切换", () => {

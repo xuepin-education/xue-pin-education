@@ -97,7 +97,7 @@ window.SITE_DATA = {
     {
       image: "assets/images/uploads/xp-top-awards.jpg",
       label: { zh: "Top Awards", en: "Top Awards" },
-      title: { zh: "三大奖项教育机构", en: "Three recognition highlights" }
+      title: { zh: "四大奖项教育机构", en: "Four recognition highlights" }
     },
     {
       image: "assets/images/uploads/xp-asean-records.jpg",
@@ -108,13 +108,13 @@ window.SITE_DATA = {
   trustShowcase: {
     autoplayMs: 2000,
     label: { zh: "TOP AWARD", en: "TOP AWARD" },
-    headline: { zh: "唯一获得三大奖项的教育机构", en: "An Education Centre Recognised Across Three Award Platforms" },
+    headline: { zh: "唯一获得四大奖项的教育机构", en: "An Education Centre Recognised Across Four Award Platforms" },
     description: {
       zh: "以资料品质、教师培训与专业服务为坚持，让每份认可成为我们继续做好教育的责任。",
       en: "We uphold learning-resource quality, teacher development and professional service, treating every recognition as a responsibility to keep improving education."
     },
     trophyImage: "assets/images/trust/gold-trophy.png",
-    trophyAlt: { zh: "代表学品三大奖项认可的金色奖杯", en: "Gold trophy representing XP Education's three recognition highlights" },
+    trophyAlt: { zh: "代表学品四大奖项认可的金色奖杯", en: "Gold trophy representing XP Education's four recognition highlights" },
     slides: [
       {
         image: "assets/images/trust/top-awards-overview.jpg",
@@ -156,6 +156,11 @@ window.SITE_DATA = {
         name: { zh: "TOP AWARD", en: "TOP AWARD" },
         headline: { zh: "全马最好服务", en: "Dedicated education service" },
         detail: { zh: "荣获亚太顶级卓越品牌大奖", en: "Recipient of an Asia Pacific excellence brand award" }
+      },
+      {
+        image: "assets/images/trust/golden-bull-award.png",
+        alt: { zh: "金牛奖", en: "Golden Bull Award" },
+        headline: { zh: "金牛奖", en: "Golden Bull Award" }
       }
     ]
   },
