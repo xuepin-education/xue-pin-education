@@ -156,6 +156,15 @@ test("TOP奖项Logo在所有断点至少上移二十像素避免下沉", () => {
   assert.ok(upwardOffsets.every((offset) => offset <= -20));
 });
 
+test("手机端TOP奖项Logo缩小并与下方文字保留间距", () => {
+  const mobileStyles = styleSource.slice(styleSource.indexOf("@media (max-width: 680px)"));
+  const topLogoRule = mobileStyles.match(/\.trust-award-logo-top\s*\{([^}]*)\}/)?.[1] || "";
+
+  assert.match(topLogoRule, /width:\s*128px\s*;/);
+  assert.match(topLogoRule, /height:\s*96px\s*;/);
+  assert.match(topLogoRule, /margin:\s*0\s+auto\s+12px\s*;/);
+});
+
 test("为什么选择标题在所有断点保持单行且手机字号可收缩", () => {
   const titleRules = [...styleSource.matchAll(/\.trust-reveal-title\s*\{([^}]*)\}/g)].map((match) => match[1]);
   const baseRule = titleRules[0];

@@ -2468,6 +2468,12 @@ body[data-page="courses"] .page-hero h1 {
     margin: 0 auto;
   }
 
+  .trust-award-logo-top {
+    width: 128px;
+    height: 96px;
+    margin: 0 auto 12px;
+  }
+
   .course-card {
     min-height: auto;
   }
